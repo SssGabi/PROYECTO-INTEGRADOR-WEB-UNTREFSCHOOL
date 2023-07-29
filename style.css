@@ -99,7 +99,17 @@ body{
 
 #elegirnos .container{
     text-align: center;
-    padding: 150px 12px;
+    padding: 100px 12px;
+}
+
+#elegirnos ul{
+    list-style-type: none;
+    padding: 25px;
+    font-size: 20px;
+}
+
+#elegirnos ul li{
+    padding: 20px;
 }
 
 #propuesta .container{
@@ -208,6 +218,16 @@ footer .contact ul{
         background-position: center left;
         height: 500px;
         width: 650px;
+    }
+
+    #elegirnos ul{
+        list-style-type: none;
+        padding: 25px;
+        font-size: 20px;
+    }
+
+    #elegirnos ul li{
+        padding: 20px;
     }
 
     #propuesta .propuestas{
