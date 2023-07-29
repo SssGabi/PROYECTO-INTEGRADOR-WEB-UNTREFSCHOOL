@@ -1,0 +1,235 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #181823;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1{font-size: 3.5em; color: #EFF5F5;}
+h2{font-size: 2.50em;}
+h3{font-size: 1.75em;}
+p{font-size: 1.25em;}
+
+button{
+    background-color: #FC7300;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.5);
+    color: #EFF5F5;
+}
+
+button:hover{
+    background-color: #EFF5F5;
+    color: #FC7300;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: #181823;
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: #FC7300;
+    font-size: 1.75em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #EFF5F5;
+}
+
+header a:hover{
+    color: #FC7300;
+}
+
+body{
+    background-color:#EFF5F5;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg, rgba(0,0,0,0.5), 
+            rgba(0,0,0,0.5)), url("media/img/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#quienes-somos{
+
+}
+
+#quienes-somos .container{
+    text-align: center;
+    padding: 150px 12px;
+}
+
+#elegirnos .container{
+    text-align: center;
+    padding: 150px 12px;
+}
+
+#propuesta .container{
+    text-align: center;
+    padding: 150px 12px;
+}
+
+#propuesta p{
+    display: none;
+}
+
+#propuesta .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg, rgba(0,0,0,0.5), 
+            rgba(0,0,0,0.5)),  url(media/img/comunidad-de-aprendizaje.jpg);
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg, rgba(0,0,0,0.5), 
+            rgba(0,0,0,0.5)),  url(media/img/recursos-tecnologicos.jpg);
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg, rgba(0,0,0,0.5), 
+            rgba(0,0,0,0.5)), url(media/img/Aprendizaje-basado-en-proyectos.jpg);
+}
+
+#propuesta h3{
+    color: #EFF5F5;
+}
+
+#propuesta h2{
+    font-size: 3em;
+}
+
+footer{
+    background-color: #EFF5F5;
+}
+
+footer .container{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+footer p{  
+    color: #181823;
+}
+
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #quienes-somos .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    #quienes-somos .texto{
+        width: 50%;
+        text-align: initial;
+        padding-left: 30px;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #quienes-somos .img-container{
+        background-image: url("media/img/untref.webp");
+        background-size: cover;
+        background-position: center left;
+        height: 500px;
+        width: 650px;
+    }
+
+    #propuesta .propuestas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #propuesta p{
+        display: block;
+        color: #EFF5F5;
+        margin-bottom: 30px;
+    }
+
+    #propuesta h3{
+        margin-top: 0;
+    }
+
+    #propuesta .carta{
+        padding: 50px;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    #propuesta button{
+        display: none;
+    }
+
+    footer .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
