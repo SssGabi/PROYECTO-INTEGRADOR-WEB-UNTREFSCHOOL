@@ -145,7 +145,7 @@ footer{
 }
 
 footer .container{
-    height: 250px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -157,9 +157,15 @@ footer p{
     color: #181823;
 }
 
+footer .contact ul{
+    list-style-type: none;
+}
+
+
 @media(min-width:720px  ) {
     header{
         width: 100%;
+        top: 0;
     }
 
     header .container{
@@ -171,6 +177,7 @@ footer p{
         flex-direction: row;
         padding-bottom: 0;
         padding-right: 20px;
+        top: 0;
     }
     form{
         padding: 50px 30px;
@@ -184,5 +191,18 @@ footer p{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    footer .social-media{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .contact{
+        margin-bottom: 130px;
+    }
+
+    footer .contact ul{
+        list-style-type: none;
     }
 }
