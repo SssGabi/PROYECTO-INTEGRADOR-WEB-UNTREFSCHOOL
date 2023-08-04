@@ -151,6 +151,10 @@ body{
     font-size: 3em;
 }
 
+footer {
+    margin-top: 100px;
+}
+
 footer{
     background-color: #EFF5F5;
 }

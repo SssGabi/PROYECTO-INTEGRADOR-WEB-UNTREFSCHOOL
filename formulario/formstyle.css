@@ -186,6 +186,11 @@ footer .contact ul{
     input{
         padding: 15px;
     }
+
+    footer {
+        margin-top: 100px;
+    }
+
     footer .container{
         display: flex;
         flex-direction: row;
