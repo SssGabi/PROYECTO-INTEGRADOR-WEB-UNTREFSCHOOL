@@ -140,10 +140,6 @@ input::placeholder, textarea::placeholder{
     background-color: #EFF5F5;
 }
 
-footer{
-    background-color: #EFF5F5;
-}
-
 footer .container{
     height: 500px;
     display: flex;
