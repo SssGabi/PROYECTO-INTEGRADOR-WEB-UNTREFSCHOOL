@@ -166,10 +166,13 @@ footer .container{
 
 footer p{  
     color: #181823;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 footer .contact ul{
     list-style-type: none;
+    margin-right: 30px; 
 }
 
 
@@ -257,8 +260,12 @@ footer .contact ul{
     }
 
     footer .social-media{
+        margin-bottom: 125px;
+    }
+
+    footer .media{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
 
     footer .contact{
@@ -267,5 +274,6 @@ footer .contact ul{
 
     footer .contact ul{
         list-style-type: none;
+        margin-right: 30px; 
     }
 }
